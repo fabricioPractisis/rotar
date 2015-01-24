@@ -22,11 +22,14 @@
     }
     
     .logo {
-      width:275px;
+      width:75px;
+	  height:25px;
       margin-left: auto;
       margin-right: auto;
       display: block;
       padding: 15px;
+	  background-color:#4183C4;
+	  border-radius:10px;
     }
     
     .container {
@@ -59,7 +62,7 @@
   </div>
   
   <div class="container" style="-webkit-perspective: 300; perspective: 300;">
-    <img src="html5_logo.png" id="imgLogo" class="logo">
+    <div id="imgLogo" class="logo"></div>
   </div>
   
   <script type="text/javascript">
@@ -95,9 +98,9 @@
       
       // Apply the transform to the image
       var logo = document.getElementById("imgLogo");
-      logo.style.webkitTransform = "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
+      logo.style.webkitTransform = "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-100)+"deg)";
       logo.style.MozTransform = "rotate("+ tiltLR +"deg)";
-      logo.style.transform = "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-1)+"deg)";
+      logo.style.transform = "rotate("+ tiltLR +"deg) rotate3d(1,0,0, "+ (tiltFB*-100)+"deg)";
     }
     
     
